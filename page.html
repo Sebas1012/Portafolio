@@ -10,20 +10,25 @@
     <!-- Fuentes Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/animaciones.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/page.css">
-
+    
+    <!-- Font Awesome CSS-->
     <script src="https://kit.fontawesome.com/1c8dd1943a.js" crossorigin="anonymous"></script>
+
+    <!-- AOS Scroll animations CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Sebastian Henao L.</title>
 </head>
 <body>
     <!-- Header -->
     <section id="cabecera" class="uk-box-shadow-small">
-        <div class="uk-text-center" style="padding-top: 130px; position: relative;">
+        <div class="uk-text-center" style="padding-top: 130px; position: relative;" data-aos="fade-up" data-aos-duration="1000">
             <img class="uk-border-circle" src="https://dummyimage.com/180x180/202020/fff&text=Perfil" alt="Border circle">
             <h4>Hola, soy <b>Sebastián</b></h4>
             <p>
@@ -31,9 +36,9 @@
                 Medellín - <b>Colombia</b>
             </p>
             <div>
-                <a href="https://github.com/Sebas1012" class="uk-icon-button  uk-margin-small-right" target="_blank"><span class="fab fa-github"></span></a>
-                <a href="https://gitlab.com/sebas1012" class="uk-icon-button  uk-margin-small-right" target="_blank"><i class="fab fa-gitlab"></i></a>
-                <a href="" class="uk-icon-button  uk-margin-small-right"><i class="fab fa-linkedin-in" target="_blank"></i></a>
+                <a href="https://github.com/Sebas1012" class="uk-icon-button  uk-margin-small-right" target="_blank" data-aos="fade-up" data-aos-duration="1600"><span class="fab fa-github"></span></a>
+                <a href="https://gitlab.com/sebas1012" class="uk-icon-button  uk-margin-small-right" target="_blank" data-aos="fade-up" data-aos-duration="1900"><i class="fab fa-gitlab"></i></a>
+                <a href="" class="uk-icon-button  uk-margin-small-right" data-aos="fade-up" data-aos-duration="2000"><i class="fab fa-linkedin-in" target="_blank"></i></a>
             </div>
         </div>
     </section>
@@ -41,58 +46,73 @@
     <!-- Body -->
     <section id="cuerpo">
         <div class="uk-text-center uk-container">
-            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify">
-                <h5><b>Sobre mi</b>:</h5>
+            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify" data-aos="fade-up" data-aos-duration="1000">
+                <h5 style="padding-bottom: 10px;"><b>Sobre mi</b>:</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.<br>Curabitur finibus libero non urna sodales pulvinar id vitae magna.</p>
             </div>
-            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify" style="padding-bottom: 20px;">
-                <h5><b>Estudios</b>:</h5>
+            
+            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify" style="padding-bottom: 20px;" data-aos="fade-up" data-aos-duration="1000">
+                <h5 style="padding-bottom: 10px;"><b>Estudios</b>:</h5>
                 <div id="card_estudios">
                     <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
                     <div style="padding-left: 10px;">
-                        <h6><b>Politécnico Mayor</b></h6>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.</P>
+                        <P>
+                            <b>Politécnico Mayor</b><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.
+                        </P>
                     </div>
                 </div>
                 <div id="card_estudios">
                     <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
                     <div style="padding-left: 10px;">
-                        <h6><b>Tecnológico de Antioquia</b></h6>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.</P>
-                    </div>
-                </div>
-            </div>
-            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify">
-                <h5><b>Certificaciones</b>:</h5>
-                <div id="card_estudios">
-                    <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
-                    <div style="padding-left: 10px;">
-                        <h6><b>Desarrollo Web con Joomla</b></h6>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.</P>
-                    </div>
-                </div>
-                <div id="card_estudios">
-                    <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
-                    <div style="padding-left: 10px;">
-                        <h6><b>Google Actívate Cloud Computing Certificate</b></h6>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.</P>
+                        <P>
+                            <b>Tecnológico de Antioquia</b><br> 
+                            ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.
+                        </P>
                     </div>
                 </div>
             </div>
-            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify">
-                <h5><b>Proyectos</b>:</h5>
+
+            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify" data-aos="fade-up" data-aos-duration="1000">
+                <h5 style="padding-bottom: 10px;"><b>Certificaciones</b>:</h5>
                 <div id="card_estudios">
                     <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
                     <div style="padding-left: 10px;">
-                        <h6><b>Brevo Software</b></h6>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.</P>
+                        <P>
+                            <b>Desarrollo Web con Joomla</b><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.
+                        </P>
                     </div>
                 </div>
                 <div id="card_estudios">
                     <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
                     <div style="padding-left: 10px;">
-                        <h6><b>Diodo</b></h6>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.</P>
+                        <P>
+                            <b>Google Actívate Cloud Computing Certificate</b><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.
+                        </P>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cards" class="uk-card uk-card-default uk-box-shadow-small uk-text-justify" data-aos="fade-up" data-aos-duration="1000">
+                <h5 style="padding-bottom: 10px;"><b>Proyectos</b>:</h5>
+                <div id="card_estudios">
+                    <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
+                    <div style="padding-left: 10px;">
+                        <P>
+                            <b>Brevo Software</b><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.
+                        </P>
+                    </div>
+                </div>
+                <div id="card_estudios">
+                    <img src="https://dummyimage.com/80 x 80/202020/fff" alt="" srcset="">
+                    <div style="padding-left: 10px;">
+                        <P>
+                            <b>Diodo</b><br>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor arcu et orci cursus congue.
+                        </P>
                     </div>
                 </div>
             </div>
@@ -100,15 +120,15 @@
     </section>
 
     <footer>
-        <div id="seccion_footer" class="" style="border-right: 1px #404040 solid;">
+        <div id="seccion_footer" class="" style="border-right: 1px #404040 solid;" data-aos="fade-right" data-aos-duration="1000">
             <h5>Lorem <b>Ipsum</b></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Ut porttitor arcu et orci cursus congue.</p>
         </div>
-        <div id="seccion_footer" style="border-right: 1px #404040 solid;">
+        <div id="seccion_footer" style="border-right: 1px #404040 solid;" data-aos="fade-right" data-aos-duration="1000">
             <h5>Lorem <b>Ipsum</b></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Ut porttitor arcu et orci cursus congue.</p>
         </div>
-        <div id="seccion_footer">
+        <div id="seccion_footer" data-aos="fade-right" data-aos-duration="1000">
             <h5>Lorem <b>Ipsum</b></h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Ut porttitor arcu et orci cursus congue.</p>
         </div>
@@ -120,5 +140,11 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit-icons.min.js"></script>
+
+    <!-- AOS Scroll Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
