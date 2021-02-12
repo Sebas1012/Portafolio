@@ -30,7 +30,7 @@
     <section id="cabecera" class="uk-box-shadow-small">
         <div class="uk-text-center" style="padding-top: 130px; position: relative;" data-aos="fade-up" data-aos-duration="1000">
             <img class="uk-border-circle" src="https://dummyimage.com/180x180/202020/fff&text=Perfil" alt="Border circle">
-            <h4>Hola, soy <b>Sebastián</b></h4>
+            <h4>Hola, soy <b><span id="typed"></span></b></h4>
             <p>
                 Tecnico en Sistemas. - Estudiante de Tecnologia en Sistemas.<br>
                 Medellín - <b>Colombia</b>
@@ -171,6 +171,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+        var typed = new Typed('#typed',{
+                    strings:["Sebastián","Desarrollador","Estudiante"],
+                    backSpeed: 40,
+                    typeSpeed: 40
+                });
     </script>
 </body>
 </html>
